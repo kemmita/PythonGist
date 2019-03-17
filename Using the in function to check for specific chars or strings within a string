@@ -1,0 +1,7 @@
+1. using the in function, we will rescieve a bool of true or false.
+phrase = 'Russell Is Cool!!!!!'
+phrase_bool = ("Cool" in phrase)
+if phrase_bool:
+    print('Word found')
+else:
+    print('Word not found')
