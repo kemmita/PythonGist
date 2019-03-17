@@ -1,0 +1,6 @@
+
+greeting = 'Welcome to Ac Studios '
+// We create a variable named "name" we can append the input function so that whatever the user inputs will be assigned to 
+// the name variable.
+name = input('Please enter your name: \n')
+print(greeting + name)
