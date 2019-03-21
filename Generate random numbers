@@ -1,0 +1,11 @@
+import numpy as np
+from numpy.random import randn
+
+x = randn() *10
+if x > 1:
+    answer = 'Greater than 1'
+    print(round(x),answer)
+else:
+    answer = 'The number is less than 1'
+    print(round(x),answer)
+  
