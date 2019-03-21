@@ -1,0 +1,4 @@
+// The Python for loop works like a typical foreach loop
+names = ['russs', 'buss', 'camel']
+for i in names:
+    print(i)
