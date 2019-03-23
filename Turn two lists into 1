@@ -1,0 +1,7 @@
+even = [2, 4, 6, 8]
+odd = [1, 3, 5, 7]
+# By creating a new list and assigning it the value of listone + listtwo it will now have all of the elements from the two lists.
+numbers = sorted(even + odd)
+print(numbers)
+for i in numbers:
+    print(i)
