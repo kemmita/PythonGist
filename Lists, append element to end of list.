@@ -1,0 +1,6 @@
+parrot_list = ['non pinin', 'no more', 'a stiff', 'qweird shit']
+
+# Add an element to a list.+
+parrot_list.append('Killing homies with guns')
+for word in parrot_list:
+    print('This is a weird phrase ' + word)
