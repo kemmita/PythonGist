@@ -1,0 +1,9 @@
+name = 'Russell'
+
+// Foreach
+for char in name:
+    print(char)
+
+// For
+for i in range(len(name)):
+    print(name[i])
