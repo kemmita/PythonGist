@@ -1,0 +1,9 @@
+menu = []
+menu.append(['egg', 'bacon', 'toast'])
+menu.append(['egg', 'sausage', 'toast'])
+menu.append(['egg', 'sausage', 'spam'])
+menu.append(['egg', 'pancakes', 'jam'])
+i = 1
+for meal in menu:
+     if 'spam' not in meal:
+         print(meal)
