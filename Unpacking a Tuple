@@ -1,0 +1,6 @@
+daughter = ('Jane', 3, 'St Paul')
+// Below we create 3 variables on a single line. The vars will be assigned the tuple data in normal order.
+daughter_name, daughter_age, daughter_location = daughter
+print(daughter_name)
+print(daughter_age)
+print(daughter_location)
