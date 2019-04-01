@@ -1,0 +1,5 @@
+1. Tuples are immutable and tharfore can not be altered once they are created.
+
+daughter = 'Jane', 3, 'St Paul'
+
+print(daughter)
