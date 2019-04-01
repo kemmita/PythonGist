@@ -1,0 +1,7 @@
+r = range(0, 10)
+for i in r[::-1]:
+    print(i)
+
+name = 'russell'
+for char in name[::-1]:
+    print(char)
