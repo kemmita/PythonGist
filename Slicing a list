@@ -1,0 +1,5 @@
+1. If we want to print the list backwards, use the slice syntax, the below code will continue to decrement by 1
+l2 =['a', 'b', 'c', 'd']
+
+for i in l2[::-1]:
+    print(i)
