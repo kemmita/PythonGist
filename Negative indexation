@@ -1,0 +1,5 @@
+1. We can use negative indexation to access a liste item the same we would using normal indexation.
+
+l2 =['a', 'b', 'c', 'd']
+print(l2[0])
+print(l2[-4])
