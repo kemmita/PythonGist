@@ -1,0 +1,9 @@
+1. We can slice and step at the same time
+
+
+# The code below will return elements 1-8 non inclusive  to the eighth element, and instead of printing every element, we have specified 
+# only to target every other. Notice the 2 in "[1:8:2]"
+letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K']
+
+for i in letters[1:8:2]:
+    print(i)
