@@ -1,0 +1,6 @@
+1. The below code will start running from element 7.
+
+letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K']
+
+for i in letters[7:]:
+    print(i)
