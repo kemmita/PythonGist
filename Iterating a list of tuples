@@ -1,0 +1,4 @@
+human = [['russell', 12, '12763'],['Jane', 1, '12ssss63'],['Michele', 32, '22222']]
+for person in human:
+    for p in person:
+        print(p)
