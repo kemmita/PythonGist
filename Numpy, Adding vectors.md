@@ -26,3 +26,13 @@ b = np.array([4, 5])
 
 print(5 + a)
 ```
+
+4. Adding, subtracting and multiplication two vectors = ai+bi, ai-bi, ai*bi
+```py
+a = np.array([2, -3])
+b = np.array([4, 5])
+
+print(a + b) # = 2 + 4, -3 + 5 = <6, 2>
+print(a - b) # = 2 - 4, -3 - 5 = <-2, -8>
+print(a * b) # = 2 * 4, -3 * 5 = <8, -15>
+```
