@@ -66,7 +66,7 @@ display(Math('\\textrm{}'))
 
 b0 = np.round(np.mean(y) - (b1 * np.mean(x1)) - (b2 * np.mean(x2)),4)
 
-# The below example shows a home with 4 bedrooms and 10 years of age, run the regression to view the age.
+# The below example shows a home with 4 bedrooms and 10 years of age, run the regression to view the expected price.
 def multi_linear_regression():
   return b0 + b1*4 + b2*10
 
