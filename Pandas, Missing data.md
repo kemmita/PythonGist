@@ -1,27 +1,15 @@
 ```py
 import numpy as np
-import pandas as pd
+import pandas as pd 
 
-df = pd.DataFrame({'A': [1,2,6, 4],
-                   'B': [4,np.nan,10,np.nan],
-                   'C': [98, np.nan, np.nan, np.nan]})
+# Read CSV
+df = pd.read_csv('sample_data/california_housing_test.csv')
 
-print(df)
-print('-----+++++-----')
-# Drop rows containing nulls
-print(df.dropna())
-print('-----+++++-----')
-# Drop cols containing nulls
-print(df.dropna(1))
+df.longitude[0] = np.nan
 
-# Fill in 12 where col B has a null value
-df['A'] = df['B'].fillna(12)
+# Drop any row containing a null value
+df.dropna()
 
-print(df)
-
-# Fill in null b vals with the avg of B
-df['B'] = df['B'].fillna(df['B'].mean())
-
-print(df)
-
+# Any col val of null in col longitude will now have the value of the mean of the entire longitude series
+df['longitude'] = df['longitude'].fillna(df.longitude.mean())
 ```
