@@ -1,0 +1,6 @@
+```py
+df = pd.read_csv('911.csv')
+# using the apply funciton we use a lambda to split each string "x.split"
+df['Reason'] = df.title.apply(lambda x: x.split(':')[0])
+df.Reason.value_counts().head(1)
+```
