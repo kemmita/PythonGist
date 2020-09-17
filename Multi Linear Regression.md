@@ -1,5 +1,6 @@
 ```py
 import matplotlib.pyplot as plt
+import numpy as np
 from scipy import stats
 from IPython.display import Math,display 
 
