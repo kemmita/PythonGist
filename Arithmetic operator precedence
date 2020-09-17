@@ -1,6 +1,0 @@
-1. If we wish to perform some of our math operations as we would in the real world, we must use "()"
-
-a = 6
-b = 3
-
-print((a + b) / (5 - 2) * 12)
