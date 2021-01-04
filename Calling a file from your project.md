@@ -1,4 +1,4 @@
-1. Helper file
+1. Helper file name is "helper.py"
 ```py
 def divide(num, div):
     return num/div
