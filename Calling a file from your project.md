@@ -2,7 +2,7 @@
 ```py
 def divide(num, div):
     return num/div
-```'
+``'
 2. File to call helper file
 ```py
 import helper
