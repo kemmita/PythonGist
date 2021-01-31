@@ -1,13 +1,14 @@
 ```py
 import numpy as np
 import matplotlib.pyplot as plt
-from PIL import Image
+import cv2
 
-# Open image from disc
-pic = Image.open('Computer-Vision-with-Python/DATA/00-puppy.jpg')
+img = cv2.imread('Computer-Vision-with-Python/DATA/00-puppy.jpg')
 
-# Convert image to numpy array
-pic_arr = np.asanyarray(pic)
+# Color images will show up initially as BGR and not RGB, we need to convert that.
+fixed_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+plt.imshow(fixed_img)
 
-pic_arr
+
+
 ```
