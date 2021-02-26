@@ -1,0 +1,3 @@
+```py
+df.rename(columns={'Do you drive for a rideshare company? (i.e. Uber or Lyft)': 'rideshare'}, inplace=True)
+```
