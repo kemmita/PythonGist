@@ -1,28 +1,28 @@
 ```py
-class Device:
-    def __init__(self, name, connected_by):
+class Animal(object):
+    def __init__(self, name, species):
         self.name = name
-        self.connected_by = connected_by
-        self.connected = True
+        self.species = species
 
-    def disconnect(self):
-        self.connected = False
-        print(f"{self.name} disconnected.")
+    def display(self):
+        self.__correct_name()
+        print(self.name)
+        print(self.species)
 
-# Here we inherit from the Deivce class and use super to call the base class constructor.
-class Printer(Device):
-    def __init__(self, name, connected_by, capacity):
-        super().__init__(name, connected_by)
-        self.capacity = capacity
-
-    def print(self, number_of_pages):
-        if number_of_pages > self.capacity:
-            return f'The current capacity, {self.capacity} ' \
-                   f'is not able to fulfil your request of {number_of_pages} pages.'
-        print(f'Printing {number_of_pages} pages...')
+    def correct_name(self):
+        self.name = self.name.upper()
 
 
-printer = Printer('Xon', 'USB', 200)
-print(printer.print(100))
-printer.disconnect()
+class Dog(Animal):
+    def __init__(self, name, species, breed):
+        super().__init__(name, species)
+        self.breed = breed
+
+    def test_this(self):
+        self.correct_name()
+        print(self.breed, self.name, self.species)
+
+
+d = Dog('Dog', 'K9', 'German Shepard')
+d.test_this()
 ```
