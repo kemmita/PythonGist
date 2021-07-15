@@ -1,0 +1,14 @@
+```py
+# create function and use it in map on line 7
+def square(n):
+    return n**2
+    
+    
+mapped_one = map(square, [1, 2, 3, 4, 5])
+
+# Use lambda
+mapped_two = map(lambda x: x**2, [1, 2, 3, 4, 5])
+
+for one, two in zip(mapped_one, mapped_two):
+    print(one, two)
+```
